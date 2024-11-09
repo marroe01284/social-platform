@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Social Platform</title>
+    <script type="module" src="/app.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">SocialApp</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600">Feed</a>
+                    <a href="profile.html" class="text-gray-700 hover:text-blue-600">Profile</a>
+                    <button id="logoutBtn" class="text-gray-700 hover:text-blue-600">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Content -->
+    <main class="max-w-2xl mx-auto mt-8 px-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex items-center space-x-4">
+                <div class="w-24 h-24 bg-gray-300 rounded-full"></div>
+                <div>
+                    <h1 id="profileName" class="text-2xl font-bold">User Name</h1>
+                    <p id="profileBio" class="text-gray-600">Bio goes here...</p>
+                </div>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-xl font-semibold mb-4">Your Posts</h2>
+                <div id="userPosts" class="space-y-4">
+                    <!-- User posts will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
